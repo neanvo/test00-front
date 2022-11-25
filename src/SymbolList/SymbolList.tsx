@@ -10,7 +10,7 @@ function SymbolList({symbols}: any) {
       }, [response]);
 
     const symbolHandler = (symbol: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined) => {
-        axios.get(`https://${config.server.domain}:${config.server.port}/api/v1/quote?s=${symbol}`)
+        axios.get(`https://${config.server.domain}/api/v1/quote?s=${symbol}`)
             .then(function (response) {
                 setResponse(response)
             })

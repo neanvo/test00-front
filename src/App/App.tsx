@@ -14,7 +14,7 @@ function App() {
 
     const handleSubmit = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
-        axios.get(`https://${config.server.domain}:${config.server.port}/api/v1/symbol?q=${value}`)
+        axios.get(`https://${config.server.domain}/api/v1/symbol?q=${value}`)
             .then(function (response) {
                 setSymbols(response.data.result.map((r: any) => r.displaySymbol))
             })

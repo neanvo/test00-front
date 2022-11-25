@@ -1,9 +1,7 @@
-const SERVER_PORT = process.env.SERVER_PORT || 3001
-const SERVER_DOMAIN = process.env.SERVER_DOMAIN || 'localhost'
+const SERVER_DOMAIN = process.env.SERVER_DOMAIN || 'immense-meadow-42353.herokuapp.com'
 
 export const config = {
     server: {
-        port: SERVER_PORT,
         domain: SERVER_DOMAIN
     }
 }
